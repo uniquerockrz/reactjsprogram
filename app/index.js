@@ -1,15 +1,15 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var HelloWorldComponent = React.createClass({
+var HelloUserComponent = React.createClass({
     render: function(){
         return (
-            <h1>Hello, World!</h1>
+            <h3>Hello, {this.props.name}</h3>
         );
     }
 });
 
 ReactDOM.render(
-    <HelloWorldComponent />,
+    <HelloUserComponent name='Saurav' />,
     document.getElementById('app')
 );
